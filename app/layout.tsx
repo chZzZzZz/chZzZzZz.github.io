@@ -16,24 +16,36 @@ const mono = Space_Mono({
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
-  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "localhost:3000";
-  const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
+  const host =
+    requestHeaders.get("x-forwarded-host") ??
+    requestHeaders.get("host") ??
+    "localhost:3000";
+  const protocol =
+    requestHeaders.get("x-forwarded-proto") ??
+    (host.startsWith("localhost") ? "http" : "https");
   const origin = `${protocol}://${host}`;
 
   return {
-    title: "Aster Vale — Independent Game Developer",
+    title: "Inspiration Beggar — Independent Game Developer",
     description:
-      "Small worlds, big feelings. Explore the games of independent developer Aster Vale.",
+      "Explore IncreTop and Beat Shapes, incremental games by independent developer Inspiration Beggar.",
     openGraph: {
-      title: "Aster Vale — Independent Game Developer",
-      description: "Small worlds. Big feelings.",
+      title: "Inspiration Beggar — Independent Game Developer",
+      description: "Systems that grow. Games that click.",
       type: "website",
-      images: [{ url: `${origin}/og.png`, width: 1732, height: 909, alt: "Aster Vale — Small worlds. Big feelings." }],
+      images: [
+        {
+          url: `${origin}/og.png`,
+          width: 1728,
+          height: 904,
+          alt: "Inspiration Beggar — IncreTop and Beat Shapes",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Aster Vale — Independent Game Developer",
-      description: "Small worlds. Big feelings.",
+      title: "Inspiration Beggar — Independent Game Developer",
+      description: "Systems that grow. Games that click.",
       images: [`${origin}/og.png`],
     },
   };
