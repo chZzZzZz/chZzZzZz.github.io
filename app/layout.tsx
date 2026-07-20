@@ -31,7 +31,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "Explore IncreTop and Beat Shapes, incremental games by independent developer Inspiration Beggar.",
     openGraph: {
       title: "Inspiration Beggar — Independent Game Developer",
-      description: "Systems that grow. Games that click.",
+      description: "Incremental games by Inspiration Beggar.",
       type: "website",
       images: [
         {
@@ -45,7 +45,7 @@ export async function generateMetadata(): Promise<Metadata> {
     twitter: {
       card: "summary_large_image",
       title: "Inspiration Beggar — Independent Game Developer",
-      description: "Systems that grow. Games that click.",
+      description: "Incremental games by Inspiration Beggar.",
       images: [`${origin}/og.png`],
     },
   };

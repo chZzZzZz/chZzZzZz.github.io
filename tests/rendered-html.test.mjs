@@ -41,6 +41,6 @@ test("does not ship fictional placeholder projects", async () => {
 
   assert.doesNotMatch(
     html,
-    /Aster Vale|Orbit Foundry|Mosslight Mail|Velvet Dungeon|impress\.games/i,
+    /Aster Vale|Orbit Foundry|Mosslight Mail|Velvet Dungeon|impress\.games|Systems that grow|Games that click/i,
   );
 });

@@ -138,11 +138,6 @@ footer {
   line-height: 0.85;
 }
 
-.intro h1 span {
-  color: transparent;
-  -webkit-text-stroke: 1.5px var(--muted);
-}
-
 .intro-bottom {
   display: grid;
   grid-template-columns: 1fr auto;

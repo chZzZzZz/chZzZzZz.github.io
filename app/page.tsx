@@ -42,11 +42,7 @@ export default function Home() {
 
       <section className="intro" id="top" aria-labelledby="intro-title">
         <p className="eyebrow">INDEPENDENT GAME DEVELOPER</p>
-        <h1 id="intro-title">
-          Systems that grow.
-          <br />
-          <span>Games that click.</span>
-        </h1>
+        <h1 id="intro-title">Inspiration Beggar</h1>
         <div className="intro-bottom">
           <p>
             I&apos;m Inspiration Beggar, an independent developer making compact
