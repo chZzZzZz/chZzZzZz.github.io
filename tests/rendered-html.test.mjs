@@ -33,6 +33,11 @@ test("renders the real Inspiration Beggar portfolio", async () => {
   assert.match(html, /Beat Shapes/);
   assert.match(html, /store\.steampowered\.com\/app\/4710920/);
   assert.match(html, /store\.steampowered\.com\/app\/4015080/);
+  assert.match(html, />Presskit <span aria-hidden="true">↗<\/span><\/a>/);
+  assert.match(
+    html,
+    /drive\.google\.com\/drive\/folders\/1HAL9SCaP-VBW3nUGZMyCfodyzbRIv9Kw\?usp=drive_link/,
+  );
 });
 
 test("does not ship fictional placeholder projects", async () => {

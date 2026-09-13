@@ -7,6 +7,8 @@ const games = [
       "An incremental game about whipping spinning tops. Earn money, upgrade your gear, learn new skills, and find a way out of a world filled with nothing but tops.",
     image: "/games/incretop.jpg",
     steam: "https://store.steampowered.com/app/4710920/",
+    presskit:
+      "https://drive.google.com/drive/folders/1HAL9SCaP-VBW3nUGZMyCfodyzbRIv9Kw?usp=drive_link",
   },
   {
     number: "02",
@@ -16,6 +18,7 @@ const games = [
       "A compact incremental bullet-heaven shooter. Defeat geometric enemies, collect notes, unlock new bullets, upgrade instruments, and build toward tougher bosses.",
     image: "/games/beat-shapes.jpg",
     steam: "https://store.steampowered.com/app/4015080/Beat_Shapes/",
+    presskit: null,
   },
 ];
 
@@ -80,6 +83,11 @@ export default function Home() {
                   <a href={game.steam} target="_blank" rel="noreferrer">
                     View on Steam <ArrowIcon />
                   </a>
+                  {game.presskit && (
+                    <a href={game.presskit} target="_blank" rel="noreferrer">
+                      Presskit <ArrowIcon />
+                    </a>
+                  )}
                 </div>
                 <p className="game-description">{game.description}</p>
               </div>
