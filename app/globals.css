@@ -269,19 +269,23 @@ footer {
   gap: 10px;
   align-items: center;
   padding: 11px 14px;
-  border: 1px solid #4a4d43;
+  color: var(--paper);
+  border: 1px solid var(--acid);
+  background: var(--acid);
   font-family: var(--font-mono), monospace;
   font-size: 0.64rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
+  transition: background 160ms ease, border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 }
 
 .game-actions a:hover,
 .game-actions a:focus-visible {
   color: var(--paper);
-  border-color: var(--acid);
-  background: var(--acid);
+  border-color: #e1ff86;
+  background: #e1ff86;
+  box-shadow: 4px 4px 0 #456526;
+  transform: translate(-2px, -2px);
 }
 
 .game-description {
